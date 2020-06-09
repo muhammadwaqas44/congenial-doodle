@@ -1,0 +1,264 @@
+/* ========login code======== */
+
+body,
+html {
+    height: 100%;
+}
+
+.sign-in-colm-9 {
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+.img-sign-in {
+    max-width: 100%;
+}
+
+.inside-img-sign-in {
+    position: absolute;
+    top: 250px;
+    right: 20px;
+    background-color: transparent;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 67%;
+}
+
+.sign-txt-sign-in {
+    font-size: 30px;
+    color: white;
+    padding-top: 10px;
+}
+
+.sign-para-sign-in {
+    font-size: 16px;
+    color: white;
+}
+
+.inside-img-sign-in {
+    position: absolute;
+    top: 250px;
+    right: 20px;
+    background-color: transparent;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 67%;
+}
+
+.sign-in-form {
+    width: 70%;
+    background-color: white;
+    border: none;
+    padding-bottom: 60px;
+    border-top: 5px solid #002e5b;
+    background-color: rgb( 255, 255, 255);
+    box-shadow: 0px 0px 10px 0px rgb( 0, 0, 0, 0.5);
+}
+
+.display_table {
+    width: 100%;
+    display: table;
+    height: 100%;
+}
+
+.form-full-div {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+.sign-txt-2 {
+    font-size: 30px;
+    color: black;
+    margin-top: 30px;
+}
+
+label {
+    margin-bottom: 0px;
+}
+
+input[type=email],
+input[type=password],
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.mail {
+    font-size: 20px;
+    color: #7c7d7f;
+}
+
+input {
+    color: gray;
+}
+
+.sign-btn-1 {
+    background-color: #002e5b;
+    color: white;
+    margin: 8px 0;
+    padding: 0px;
+    border: 1px solid #002e5b;
+    cursor: pointer;
+    width: 100%;
+    position: relative;
+    box-shadow: 1px 3px 14px #656666;
+}
+
+.sign-btn-1 p {
+    width: 80%;
+    float: left;
+    margin: 0px;
+    padding: 14px;
+}
+
+input:focus {
+    outline: none !important;
+}
+
+.login-arow {
+    text-align: center;
+    float: right;
+    width: 20%;
+    border-left: 1px solid #fff;
+    padding: 14px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+.t_add_bg {
+    background: #000;
+}
+
+
+/* ggggg */
+
+.main_login {
+    background: url('/dashboard_assets/images/login-img.png');
+    background-size: cover;
+    position: relative;
+    height: 100%;
+}
+
+.f_g_tm {
+    height: 100%;
+}
+
+.white_sectin {
+    width: 25%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: white;
+}
+
+.f_g_tmain {
+    width: 100%;
+    position: relative;
+}
+
+.img_span {
+    width: 100%;
+    display: block;
+    z-index: 1;
+}
+
+.img_span img {
+    width: 100%;
+    display: block;
+}
+
+.t_mainDetail {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.t_mainDetail::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 25%;
+    background-color: white;
+    height: 100%;
+}
+
+.auto_container {
+    max-width: 1440px;
+    margin: auto;
+    z-index: 11;
+    position: relative;
+    height: 100%;
+    padding: 0 50px;
+}
+
+.t_mainDetail_left {
+    width: 50%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.t_mainDetail_right {
+    width: 50%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+    .sign-in-form {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+    .t_mainDetail_left {
+        width: 100%;
+        display: block;
+    }
+    .white_sectin {
+        display: none;
+    }
+    .main_login {
+        height: auto
+    }
+    .t_mainDetail_left {
+        margin-top: 40px;
+    }
+    .t_mainDetail_right {
+        width: 100%;
+        display: block;
+    }
+    .sign-in-form {
+        width: 100%;
+    }
+    .t_mainDetail::after {
+        display: none;
+    }
+    .display_table_revrs {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .f_g_tmain_inner {
+        position: static;
+        background: url('/dashboard_assets/images/login-img.png') no-repeat;
+        background-size: cover;
+    }
+    .img_span {
+        display: none;
+    }
+    .auto_container {
+        padding: 20px 30px;
+    }
+}
